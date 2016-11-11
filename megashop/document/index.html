@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.path{color:#090;}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Megashop HTML version&rdquo; Documentation by &ldquo;Template Koolthememaster&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Mega Shop HTML Version&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: x/x/xxxx<br>
+					By: koolthememaster<br>
+					Email: <a href="mailto:koolthememaster@gmail.com">koolthememaster@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/koolthememaster">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<div class="span-12 last">
+        	<h3>Home page banner slider</h3>
+            
+            	<h4>You can easly change slider effect from going this path:</h4>
+                <span class="path"> magashop\js\common.js</span>
+                <p>and search below code</p>
+                <pre>
+                	$('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                </pre>
+            	<p>Listed below are all of the options available to customize FlexSlider to suite your needs, along with their default values. For examples on how to use these properties for advanced setups, check out the Advanced Options section.</p>	
+                
+            
+
+<pre>animation: "fade",              //String: Select your animation type, "fade" or "slide"</pre>
+<pre>easing: "swing",               //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!</pre>
+<pre>reverse: false,                 //{NEW} Boolean: Reverse the animation direction</pre>
+<pre>animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end</pre>
+<pre>slideshow: true,                //Boolean: Animate slider automatically</pre>
+<pre>slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds</pre>
+<pre>animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds</pre>
+<pre>initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds</pre>
+<pre>randomize: false,</pre>
+        </div>
+		<hr class="space">
+        <div class="span-12 last">
+        	<h3>Home Page Product Carousel</h3>
+            
+            	<h4>You can easly change carousel effect from going this path:</h4>
+                <span class="path"> magashop\js\common.js</span>
+                <p>and search below code</p>
+                <pre>
+                	$('#mix').jcarousel({
+                        scroll: 1,
+                        easing: 'swing',
+                        animation: 750,
+                        visible: 0,
+                        auto: 0
+                    });	
+                </pre>
+            	<p>Listed below are all of the options available to customize jcarousel to suite your needs, along with their default values. For examples on how to use these properties for advanced setups, check out the Advanced Options section.</p>	
+                
+            
+
+<pre>scroll: 1,                     //Add number of product you want to scroll</pre>
+<pre>easing: "swing",               //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!</pre>
+<pre>animation: 750,            //Integer: Set the speed of animations, in milliseconds</pre>
+        </div>
+      <hr class="space">
+        <div class="span-12 last">
+        <h3>Quick View</h3>
+        <p>We have added this code in index.html and category.html. You can add your content as per your requirement.</p>
+        <pre>
+        	    &lt;!--Quick view Block--&gt;
+&lt;article style="display:none;"&gt;
+	&lt;section id="quick-view-container" class="quick-view-wrapper"&gt;
+	&lt;div class="quick-view-container"&gt;
+		&lt;div class="quick-view-left"&gt;
+			&lt;h2&gt;Sunglass RB3184&lt;/h2&gt;
+			&lt;div class="product-img-box"&gt;
+				&lt;p class="product-image"&gt;
+					&lt;img src="images/sale_icon_img.png" title="Sale" alt="Sale" class="sale-img" /&gt;
+					&lt;a href="view.html" title="Image"&gt;&lt;img src="images/quick_view_img.png" title="Image" alt="Image" /&gt;&lt;/a&gt;				&lt;/p&gt;
+				&lt;ul class="thum-img"&gt;
+					&lt;li&gt;&lt;img  src="images/quick_thum_img.png" title="" alt="" /&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;img  src="images/quick_thum_img.png" title="" alt="" /&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="quick-view-right tabs"&gt;
+			&lt;ul class="tab-block tabNavigation"&gt;
+				&lt;li&gt;&lt;a class="selected" title="Overview" href="#tabDetail"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a title="Description" href="#tabDes"&gt;Description&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div id="tabDetail" class="tabDetail"&gt;
+            	&lt;div class="first-review"&gt;Be the first to review this product&lt;/div&gt;
+			&lt;div class="price-box"&gt;
+				&lt;span class="price"&gt;$600.00&lt;/span&gt;			&lt;/div&gt;
+			&lt;div class="availability"&gt;In stock&lt;/div&gt;
+			&lt;div class="color-size-block"&gt;
+				&lt;div class="label-row"&gt;
+					&lt;label&gt;&lt;em&gt;*&lt;/em&gt; color&lt;/label&gt;
+					&lt;span class="required"&gt;* Required Fields&lt;/span&gt;				&lt;/div&gt;
+				&lt;div class="select-row"&gt;
+					&lt;select&gt;&lt;option&gt;-- Please Select --&lt;/option&gt;&lt;/select&gt;
+				&lt;/div&gt;
+				&lt;div class="label-row"&gt;
+					&lt;label&gt;&lt;em&gt;*&lt;/em&gt; size&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="select-row"&gt;
+					&lt;select&gt;&lt;option&gt;-- Please Select --&lt;/option&gt;&lt;/select&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="add-to-cart-box"&gt;
+				&lt;span class="qty-box"&gt;
+					&lt;label for="qty"&gt;Qty:&lt;/label&gt;
+					&lt;a class="prev" title="" href="#"&gt;&lt;img alt="" title="" src="images/qty_prev.png"&gt;&lt;/a&gt;
+					&lt;input type="text" name="qty" class="input-text qty" id="qty" maxlength="12" value="1"&gt;
+					&lt;a class="next" title="" href="#"&gt;&lt;img alt="" title="" src="images/qty_next.png"&gt;&lt;/a&gt;				&lt;/span&gt;
+				&lt;button title="Add to Cart" class="form-button"&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="tabDes" class="tabDes"&gt;
+            	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat odio, suscipit eu porta et, ultricies id sapien. Quisque posuere odio eget lectus suscipit sodales. Sed consequat, leo ut varius scelerisque, augue massa tincidunt est, et tincidunt enim tortor a metus. In sit amet diam in tellus tincidunt mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi hendrerit eleifend tortor, a dapibus tellus suscipit porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In mollis adipiscing mi et volutpat. Aliquam vitae dui nunc. Nulla ac ante eu massa dictum volutpat. Sed mauris sem, posuere sit amet pretium consectetur, ullamcorper vel orci. Aenean feugiat luctus lectus ac hendrerit. Fusce pulvinar, mauris eget sodales suscipit, diam neque condimentum lectus, id imperdiet felis turpis egestas neque. In aliquet orci eget nisl sollicitudin sed gravida tortor commodo&lt;/p&gt;
+            &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="clearfix"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;/article&gt;     
+    &lt;!--Quick view Block--&gt; 
+        </pre>
+        </div>
+        <hr class="space">
+        <div class="span-12 last">
+        <h3>Css files</h3>
+        <p>We have added lots of css files where user can make change easily.</p>
+        <pre>
+        	&lt;link rel="stylesheet" href="css/style.css"&gt;
+            &lt;link rel="stylesheet" href="css/orange.css"&gt;
+            &lt;link rel="stylesheet" href="css/skeleton.css"&gt;
+            &lt;link rel="stylesheet" href="css/layout.css"&gt;
+            &lt;link rel="stylesheet" href="css/ddsmoothmenu.css"/&gt;
+            &lt;link rel="stylesheet" href="css/elastislide.css"/&gt;
+            &lt;link rel="stylesheet" href="css/home_flexslider.css"/&gt;           
+            &lt;link rel="stylesheet" href="css/light_box.css"/&gt;
+            &lt;link href="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;
+        </pre>
+        </div>
+        <hr class="space">
+        <div class="span-12 last">
+        <h3>Images</h3>
+        <span class="path"> magashop\images\</span>
+        <p>Here you can add images as per your like: Banner images, Promotional images, Product images and others...</p>
+        
+        </div>
+	</div><!-- end div .container -->
+    <h1 class="center">"Thank you so mcuh"</h1>
+</body>
+</html>
